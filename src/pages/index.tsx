@@ -5,7 +5,7 @@ export default function Home() {
         bg-gradient-to-r from-gray-200 to-blue-400
       `
     }>
-      <h1>Admin</h1>
+      <h1>Admin ola</h1>
     </div>
   )
 }
