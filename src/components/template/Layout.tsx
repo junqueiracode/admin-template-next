@@ -1,3 +1,7 @@
+import Cabecalho from "./Cabecalho"
+import MenuLateral from "./MenuLateral"
+import Conteudo from "./Conteudo"
+
 interface LayoutProps {
     titulo: string
     subtitulo: string
@@ -7,6 +11,17 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
     return (
-        <div></div>
+        <div className={`flex h-screen w-screen`}>
+            <MenuLateral />
+            <div className={`flex flex-col w-full p-7
+            bg-gray-300 
+            `}>
+            <Cabecalho titulo={props.titulo} subtitulo={props.subtitulo} />
+            <Conteudo>
+                {props.children}
+            </Conteudo>
+            </div>
+          
+        </div>
     )
 }

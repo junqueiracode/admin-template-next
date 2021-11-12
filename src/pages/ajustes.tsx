@@ -1,10 +1,8 @@
 import Layout from "../components/template/Layout";
 
-
-
-export default function Home() {
+export default function Ajustes() {
   return (
-    <Layout titulo="Pagina Inicial" subtitulo="Estamos construindo um template Admin">
+    <Layout titulo="Ajustes" subtitulo="Ajustes geral">
         <h3>Estamos com conteudo</h3>
     </Layout>
   )
